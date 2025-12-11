@@ -1,0 +1,57 @@
+VIDEO SCRIPT: Zookeeper's Challenge
+-----------------------------------
+
+[SECTION 1: INTRODUCTION]
+Action: Face the camera or show the title screen of your code editor.
+Audio: 
+"Hi, this is [Your Name], and this is my submission for the Zookeeper's Challenge assignment. 
+The goal of this program is to manage a dynamic zoo environment by processing animal data, 
+generating unique attributes, and organizing them into a population report."
+
+[SECTION 2: ARCHITECTURE & LOGIC]
+Action: Screen share your VS Code window showing 'zookeeper_challenge.py'.
+Audio:
+"I structured my Python solution using a modular approach. The main logic resides in the 
+'process_zoo_data' function, which orchestrates the reading, processing, and writing of data.
+
+I created three key helper functions to handle specific tasks:
+1. 'load_names': This reads the animalNames.txt file and parses it into a dictionary, allowing 
+   me to easily pop names off the list for each species.
+2. 'gen_unique_id': This generates IDs like 'Hy01' or 'Li02'. It uses a global dictionary 
+   to track the count of each species found so far.
+3. 'gen_birth_date': This calculates the birth date. It subtracts the animal's age from the 
+   current year and uses a dictionary to map seasons (Spring, Summer, Fall, Winter) to specific dates."
+
+[SECTION 3: PARSING LOGIC]
+Action: Scroll to the loop inside 'process_zoo_data' (around line 85).
+Audio:
+"For parsing the input file, I read 'arrivingAnimals.txt' line by line. Since the data is 
+comma-separated, I split the string and then extract specific attributes. 
+
+For example, I parse the first segment to get age and sex, and look for keywords like 'born in' 
+to determine the season. This allows me to handle variations in the input data dynamically."
+
+[SECTION 4: DEMONSTRATION]
+Action: Open the terminal in VS Code. Ensure 'zooPopulation.txt' does not exist or delete it first to show it being created.
+Audio:
+"Now, let's see it in action. I have my input files ready here. I will run the script from the terminal."
+
+Action: Type 'python3 zookeeper_challenge.py' and hit Enter.
+Audio:
+"The script runs successfully and tells us the report has been generated."
+
+[SECTION 5: REVIEWING OUTPUT]
+Action: Open the newly created 'zooPopulation.txt' file.
+Audio:
+"If we open the 'zooPopulation.txt' file, we can see the results. 
+The animals are correctly organized by habitat: Hyena, Lion, Bear, and Tiger.
+
+Each entry includes the generated Unique ID, the assigned Name from our list, the calculated 
+birth date, and the other attributes parsed from the input. You can see the IDs increment 
+correctly for each species."
+
+[SECTION 6: CONCLUSION]
+Action: Briefly show code or face camera.
+Audio:
+"This project helped me practice file I/O, string manipulation, and modular function design in Python. 
+Thank you for watching!"
